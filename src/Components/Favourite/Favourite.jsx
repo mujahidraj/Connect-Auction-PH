@@ -4,7 +4,7 @@ import { IoMdClose } from "react-icons/io";
 
 
 
-const Favourite = ({ bidItems }) => {
+const Favourite = ({ bidItems,handleRemove }) => {
 
     
     const totalCost=()=>{
@@ -46,7 +46,8 @@ const Favourite = ({ bidItems }) => {
                                         </div>
 
                                     </div>
-                                    <IoMdClose />
+                                    <IoMdClose size={35} onClick={()=>handleRemove(
+                                    item.id)}/>
                                 </div>
                             )}
                         </div>
@@ -56,7 +57,7 @@ const Favourite = ({ bidItems }) => {
                 <hr />
                 <div className='flex text-xl font-bold justify-between mt-5'>
                     <h3>Total bid cost</h3>
-                    <h3>{totalCost()}</h3>
+                    <h3>{totalCost()}USD</h3>
                 </div>
 
 

@@ -38,7 +38,7 @@ const Auction = ({handleBid}) => {
 
 
             <div className={` ${grid===true? "hidden" :"visible"}   `}>
-                <AuctionItemsTable items={items}></AuctionItemsTable>
+                <AuctionItemsTable items={items} handleBid={handleBid}></AuctionItemsTable>
             </div>
         </div>
     );

@@ -10,19 +10,20 @@ function App() {
 
   const [bidItems, getItems] = useState([])
 
-  
-
- 
-     
-
-
   const handleBid = (auctionItems) => {
     const newItems = [...bidItems, auctionItems]
     getItems(newItems)
+  
     
   }
 
+const handleRemove=(id)=>{
+console.log(id);
 
+
+const remaining= bidItems.filter(item=>item.id !==id)  
+return getItems(remaining)
+}
 
   return (
     <>
@@ -40,7 +41,7 @@ function App() {
             <Auction handleBid={handleBid}></Auction>
           </div>
           <div className='w-[30%]'>
-            <Favourite bidItems={bidItems}></Favourite>
+            <Favourite bidItems={bidItems} handleRemove={handleRemove}></Favourite>
           </div>
         </div>
       </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import { ImHammer2 } from "react-icons/im";
 
 
-const AuctionItemsTable = ({items}) => {
+const AuctionItemsTable = ({items,handleBid}) => {
     return (
         <div>
             <div className="overflow-x-auto">
@@ -23,7 +23,7 @@ const AuctionItemsTable = ({items}) => {
               <td className="py-3 px-4">{item.title}</td>
               <td className="py-3 px-4">{item.currentBidPrice} USD</td>
               <td className="py-3 px-4">{item.timeLeft} left</td>
-              <td className="py-3 px-4"><ImHammer2 size={25}/>
+              <td className="py-3 px-4"><ImHammer2 size={25} onClick={()=>handleBid(item)}/>
 </td>
             </tr>
           ))}
