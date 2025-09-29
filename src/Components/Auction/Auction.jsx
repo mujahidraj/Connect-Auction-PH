@@ -33,12 +33,12 @@ const Auction = ({handleBid}) => {
         {grid===true? <div className='flex items-center gap-5'><TfiLayoutGrid2 size={30} /><p className='text-2xl font-bold'>Grid View</p></div>: <div className='flex items-center gap-5'> <GiHamburgerMenu size={30} /><p className='text-2xl font-bold'>List View</p></div>}</button>
             </div>
             <div className={`grid lg:grid-cols-2 ${grid===true? "visible":"hidden"}  max-md:grid-cols-1 gap-5 `}>
-                {items.map(auctionItems => <AuctionItems key={auctionItems.id} auctionItems={auctionItems} handleBid={handleBid}></AuctionItems>)}
+                {items.map(auctionItems => <AuctionItems key={auctionItems.id} auctionItems={auctionItems} handleBid={handleBid} ></AuctionItems>)}
             </div>
 
 
             <div className={` ${grid===true? "hidden" :"visible"}   `}>
-                <AuctionItemsTable items={items} handleBid={handleBid}></AuctionItemsTable>
+                <AuctionItemsTable items={items} handleBid={handleBid} ></AuctionItemsTable>
             </div>
         </div>
     );

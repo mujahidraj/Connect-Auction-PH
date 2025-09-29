@@ -5,7 +5,7 @@ import { ImHammer2 } from "react-icons/im";
 const AuctionItems = ({ auctionItems ,handleBid}) => {
     return (
         <div className=''>
-            <div className="card bg-base-100 w-96 border-[1px] mx-4 shadow-sm " >
+            <div className="card bg-base-100 w-96 border-[1px] shadow-sm " >
                 <figure>
                     <img
                         src={auctionItems.image} className='w-96 h-64 object-cover'
@@ -23,7 +23,12 @@ const AuctionItems = ({ auctionItems ,handleBid}) => {
 
                     <div className="card-actions justify-between">
                         <h3 className='text-lg'>Bid : <span className='text-red-500'>{auctionItems.currentBidPrice}</span> USD</h3>
-                        <button className="btn btn-primary text-xl" onClick={()=>handleBid(auctionItems)}>Bid Now <ImHammer2 size={25}/>
+                        <button className="btn btn-primary text-xl"  onClick={()=>{
+                    
+                        handleBid(auctionItems);
+                        }
+                        }>
+                            Bid Now <ImHammer2 size={25}/>
                         </button>
 
                     </div>

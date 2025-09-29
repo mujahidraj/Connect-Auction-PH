@@ -13,17 +13,15 @@ function App() {
   const handleBid = (auctionItems) => {
     const newItems = [...bidItems, auctionItems]
     getItems(newItems)
-  
     
   }
 
 const handleRemove=(id)=>{
-console.log(id);
-
-
 const remaining= bidItems.filter(item=>item.id !==id)  
 return getItems(remaining)
 }
+
+
 
   return (
     <>
@@ -36,12 +34,12 @@ return getItems(remaining)
         <h2 className='text-[#0E2954] text-4xl font-semibold mb-5'>Active Auctions</h2>
         <p className='opacity-80 text-xl'>Discover and bid on extraordinary items</p>
         {/* data section */}
-        <div className='flex my-10'>
+        <div className='flex my-10 lg:flex-row max-sm:flex-col-reverse '>
           <div className='w-[70%]'>
-            <Auction handleBid={handleBid}></Auction>
+            <Auction handleBid={handleBid}  ></Auction>
           </div>
           <div className='w-[30%]'>
-            <Favourite bidItems={bidItems} handleRemove={handleRemove}></Favourite>
+            <Favourite bidItems={bidItems} handleRemove={handleRemove} ></Favourite>
           </div>
         </div>
       </div>
