@@ -27,9 +27,9 @@ const Auction = () => {
 
         <div>
             <div className='flex gap-5 justify-center mb-10'>
-                <button className={` border-[1px] p-2 hover:bg-slate-300 duration-300  active:bg-blue-700`} onClick={handleGrid}>
+                <button className={` rounded-3xl p-3 hover:bg-blue-300 duration-300  active:bg-blue-700`} onClick={handleGrid}>
 
-        {grid===true? <TfiLayoutGrid2 size={30} />:<GiHamburgerMenu size={30} />}</button>
+        {grid===true? <div className='flex items-center gap-5'><TfiLayoutGrid2 size={30} /><p className='text-base font-bold'>Grid View</p></div>: <div className='flex items-center gap-5'> <GiHamburgerMenu size={30} /><p className='text-base font-bold'>List View</p></div>}</button>
             </div>
             <div className={`grid lg:grid-cols-2 ${grid===true? "visible":"hidden"}  max-md:grid-cols-1 gap-5 `}>
                 {items.map(auctionItems => <AuctionItems key={auctionItems.id} auctionItems={auctionItems}></AuctionItems>)}

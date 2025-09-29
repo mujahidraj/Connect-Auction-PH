@@ -5,8 +5,8 @@ import userIcon from "../../assets/user.jpg";
 
 const Navbar = () => {
     return (
-        <div className='mx-20'>
-            <div className="navbar bg-base-100 shadow-sm">
+        <div className=''>
+            <div className="navbar bg-base-100 shadow-sm fixed z-50 opacity-70 top-0 left-0 right-0">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
