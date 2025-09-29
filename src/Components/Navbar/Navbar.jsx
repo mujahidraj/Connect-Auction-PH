@@ -47,7 +47,7 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end flex gap-5">
                     <a className="btn"><IoNotifications  size={23}/></a>
-                    <img className='w-12 h-12 rounded-full object-cover hover:w-20  duration-600' src={userIcon} alt="" />
+                    <img className='w-12 h-12 rounded-full object-cover hover:w-20  duration-300' src={userIcon} alt="" />
                 </div>
             </div>
         </div>
