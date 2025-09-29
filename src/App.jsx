@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import './App.css'
 import Auction from './Components/Auction/Auction'
 import Favourite from './Components/Favourite/Favourite'
@@ -7,9 +8,25 @@ import Navbar from './Components/Navbar/Navbar'
 
 function App() {
 
+  const [bidItems, getItems] = useState([])
+
+  
+
+ 
+     
+
+
+  const handleBid = (auctionItems) => {
+    const newItems = [...bidItems, auctionItems]
+    getItems(newItems)
+    
+  }
+
+
+
   return (
     <>
-    {/* Navbar */}
+      {/* Navbar */}
       <Navbar></Navbar>
       {/* Hero Section */}
       <HeroSection></HeroSection>
@@ -20,10 +37,10 @@ function App() {
         {/* data section */}
         <div className='flex my-10'>
           <div className='w-[70%]'>
-            <Auction></Auction>
+            <Auction handleBid={handleBid}></Auction>
           </div>
           <div className='w-[30%]'>
-            <Favourite></Favourite>
+            <Favourite bidItems={bidItems}></Favourite>
           </div>
         </div>
       </div>

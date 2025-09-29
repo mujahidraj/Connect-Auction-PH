@@ -1,6 +1,8 @@
 import React from 'react';
+import { ImHammer2 } from "react-icons/im";
 
-const AuctionItems = ({ auctionItems }) => {
+
+const AuctionItems = ({ auctionItems ,handleBid}) => {
     return (
         <div className=''>
             <div className="card bg-base-100 w-96 border-[1px] mx-4 shadow-sm " >
@@ -13,15 +15,16 @@ const AuctionItems = ({ auctionItems }) => {
                     <h2 className="card-title">{auctionItems.title}</h2>
                     <p>{auctionItems.description}</p>
 
-                       <div className='flex gap-5 justify-between my-4'>
+                    <div className='flex gap-5 justify-between my-4'>
                         <h3 className='text-lg '><span className='text-red-500'>{auctionItems.timeLeft} left</span></h3>
                         <h3 className='text-lg '><span className='text-red-500'>{auctionItems.bidsCount}</span> Bids already</h3>
-                       </div>
+                    </div>
 
 
                     <div className="card-actions justify-between">
                         <h3 className='text-lg'>Bid : <span className='text-red-500'>{auctionItems.currentBidPrice}</span> USD</h3>
-                        <button className="btn btn-primary">Bid Now</button>
+                        <button className="btn btn-primary text-xl" onClick={()=>handleBid(auctionItems)}>Bid Now <ImHammer2 size={25}/>
+                        </button>
 
                     </div>
                 </div>

@@ -1,4 +1,6 @@
 import React from 'react';
+import { ImHammer2 } from "react-icons/im";
+
 
 const AuctionItemsTable = ({items}) => {
     return (
@@ -21,7 +23,8 @@ const AuctionItemsTable = ({items}) => {
               <td className="py-3 px-4">{item.title}</td>
               <td className="py-3 px-4">{item.currentBidPrice} USD</td>
               <td className="py-3 px-4">{item.timeLeft} left</td>
-              <td className="py-3 px-4">💶</td>
+              <td className="py-3 px-4"><ImHammer2 size={25}/>
+</td>
             </tr>
           ))}
     </tbody>
