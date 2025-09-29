@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "title": "Vintage Camera",
+    "description": "A classic film camera in good condition.",
+    "currentBidPrice": 85.50,
+    "timeLeft": "3h 12m",
+    "bidsCount": 7,
+    "image": "https://images.unsplash.com/photo-1519183071298-a2962be96c73"
+  },
+  {
+    "id": 2,
+    "title": "Acoustic Guitar",
+    "description": "Six-string acoustic guitar, recently re-strung.",
+    "currentBidPrice": 120.00,
+    "timeLeft": "1d 5h",
+    "bidsCount": 12,
+    "image": "https://images.unsplash.com/photo-1511379938547-c1f69419868d"
+  },
+  {
+    "id": 3,
+    "title": "Wrist Watch",
+    "description": "Luxury wrist watch with stainless steel strap.",
+    "currentBidPrice": 260.75,
+    "timeLeft": "8h 45m",
+    "bidsCount": 14,
+    "image": "https://images.unsplash.com/photo-1517841905240-472988babdf9"
+  },
+  {
+    "id": 4,
+    "title": "Leather Boots",
+    "description": "Brown leather boots, men’s size 42.",
+    "currentBidPrice": 65.00,
+    "timeLeft": "9h 30m",
+    "bidsCount": 5,
+    "image": "https://images.unsplash.com/photo-1528701800489-20be9c1c44cc"
+  },
+  {
+    "id": 5,
+    "title": "Painting — Landscape",
+    "description": "Oil painting of a mountain landscape.",
+    "currentBidPrice": 320.00,
+    "timeLeft": "2d 2h",
+    "bidsCount": 9,
+    "image": "https://images.unsplash.com/photo-1529101091764-c3526daf38fe"
+  },
+  {
+    "id": 6,
+    "title": "Headphones",
+    "description": "Noise cancelling over-ear headphones.",
+    "currentBidPrice": 95.25,
+    "timeLeft": "6h 20m",
+    "bidsCount": 11,
+    "image": "https://images.unsplash.com/photo-1518441902119-2a08a5a8f5a8"
+  },
+  {
+    "id": 7,
+    "title": "Vintage Radio",
+    "description": "Retro style radio in working condition.",
+    "currentBidPrice": 55.80,
+    "timeLeft": "4h 15m",
+    "bidsCount": 4,
+    "image": "https://images.unsplash.com/photo-1509347528160-9a9e33742cdb"
+  },
+  {
+    "id": 8,
+    "title": "Pocket Watch",
+    "description": "Antique pocket watch, gold plated.",
+    "currentBidPrice": 150.00,
+    "timeLeft": "12h 50m",
+    "bidsCount": 8,
+    "image": "https://images.unsplash.com/photo-1616627986397-5f8b3d7a6d6e"
+  },
+  {
+    "id": 9,
+    "title": "Typewriter",
+    "description": "Vintage manual typewriter from 1950s.",
+    "currentBidPrice": 210.00,
+    "timeLeft": "1d 3h",
+    "bidsCount": 6,
+    "image": "https://images.unsplash.com/photo-1505685296765-3a2736de412f"
+  },
+  {
+    "id": 10,
+    "title": "Ceramic Vase",
+    "description": "Handmade glazed ceramic vase.",
+    "currentBidPrice": 48.75,
+    "timeLeft": "7h 10m",
+    "bidsCount": 10,
+    "image": "https://images.unsplash.com/photo-1616627973186-b6fef68eaf29"
+  },
+  {
+    "id": 11,
+    "title": "Classic Book Collection",
+    "description": "Set of 5 classic literature hardcover books.",
+    "currentBidPrice": 75.00,
+    "timeLeft": "20h 30m",
+    "bidsCount": 13,
+    "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794"
+  },
+  {
+    "id": 12,
+    "title": "Sunglasses",
+    "description": "Polarized stylish sunglasses.",
+    "currentBidPrice": 29.99,
+    "timeLeft": "5h 40m",
+    "bidsCount": 3,
+    "image": "https://images.unsplash.com/photo-1515442261605-cd4ce59a7d01"
+  },
+  {
+    "id": 13,
+    "title": "Backpack",
+    "description": "Waterproof travel backpack (30 L).",
+    "currentBidPrice": 40.50,
+    "timeLeft": "10h 5m",
+    "bidsCount": 7,
+    "image": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f"
+  },
+  {
+    "id": 14,
+    "title": "Desk Lamp",
+    "description": "LED desk lamp with adjustable brightness.",
+    "currentBidPrice": 22.75,
+    "timeLeft": "3h 55m",
+    "bidsCount": 6,
+    "image": "https://images.unsplash.com/photo-1505691938895-1758d7feb511"
+  },
+  {
+    "id": 15,
+    "title": "Camera Lens",
+    "description": "50mm prime lens for DSLR.",
+    "currentBidPrice": 95.00,
+    "timeLeft": "11h 45m",
+    "bidsCount": 9,
+    "image": "https://images.unsplash.com/photo-1519183071298-a2962be96c73"
+  }
+]
