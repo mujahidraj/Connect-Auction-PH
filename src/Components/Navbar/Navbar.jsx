@@ -5,7 +5,7 @@ import userIcon from "../../assets/user.jpg";
 
 const Navbar = () => {
     return (
-        <div>
+        <div className='mx-10'>
             <div className="navbar bg-base-100 shadow-sm">
                 <div className="navbar-start">
                     <div className="dropdown">
