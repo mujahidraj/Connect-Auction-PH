@@ -1,5 +1,5 @@
 import React from 'react';
-import hero from '../../assets/Banner-min.jpg'
+import hero from '../../assets/hero-image.jpg'
 import { FaArrowRight } from "react-icons/fa";
 import './HeroSection.css'
 

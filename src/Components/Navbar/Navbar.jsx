@@ -1,6 +1,6 @@
 import React from 'react';
 import { IoNotifications } from "react-icons/io5";
-import userIcon from "../../assets/user.jpg";
+import userIcon from "../../assets/3.jpg";
 
 
 const Navbar = () => {
