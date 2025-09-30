@@ -26,9 +26,10 @@ const AuctionItems = ({ auctionItems ,handleBid ,handleEnable}) => {
                     </div>
 
 
-                    <div className="card-actions justify-between">
+                    <div className={`card-actions justify-between `}>
                         <h3 className='text-lg'>Bid : <span className='text-red-500'>{auctionItems.currentBidPrice}</span> USD</h3>
-                        <button className={` btn btn-primary text-xl`} disabled={handleEnable(auctionItems.id) } onClick={()=>{
+                        <div className={`${handleEnable(auctionItems.id)?"cursor-not-allowed":""}`}>
+                            <button className={` btn btn-primary text-xl`} disabled={handleEnable(auctionItems.id) } onClick={()=>{
                     
                         handleBid(auctionItems);
                         toast.success(`${auctionItems.title} has been added to favourite list!`)
@@ -36,6 +37,7 @@ const AuctionItems = ({ auctionItems ,handleBid ,handleEnable}) => {
                         }>
                             Bid Now <ImHammer2 className={`${handleEnable(auctionItems.id)?"-rotate-45":""}`} size={25}/>
                         </button>
+                        </div>
 
                     </div>
                 </div>

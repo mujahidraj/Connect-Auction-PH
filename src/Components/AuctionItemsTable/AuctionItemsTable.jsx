@@ -26,7 +26,7 @@ const AuctionItemsTable = ({items,handleBid,handleEnable}) => {
               <td className="py-3 px-4">{item.timeLeft} left</td>
               <td className="py-3 px-4"><button disabled={handleEnable(item.id)} onClick={()=>{handleBid(item)
                 toast.success(`${item.title} has been added to favourite list.`)}
-              }><ImHammer2 size={25} className={`${handleEnable(item.id)?"-rotate-45":""}`}/></button>
+              }><ImHammer2 size={25} className={`${handleEnable(item.id)?"-rotate-45":""} ${handleEnable(item.id)?"cursor-not-allowed":""}`}/></button>
 </td>
             </tr>
           ))}
