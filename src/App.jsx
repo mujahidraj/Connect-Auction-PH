@@ -18,10 +18,23 @@ function App() {
 
 const handleRemove=(id)=>{
 const remaining= bidItems.filter(item=>item.id !==id)  
+
 return getItems(remaining)
 }
 
 
+
+const handleEnable =(id)=>{
+  if(
+    bidItems.find(item=>item.id===id)
+  ){
+    return true
+  }
+  else{
+    return false
+  }
+  
+}
 
   return (
     <>
@@ -36,7 +49,7 @@ return getItems(remaining)
         {/* data section */}
         <div className='flex my-10 lg:flex-row max-sm:flex-col-reverse '>
           <div className='w-[70%]'>
-            <Auction handleBid={handleBid}  ></Auction>
+            <Auction handleBid={handleBid} handleEnable={handleEnable} ></Auction>
           </div>
           <div className='w-[30%]'>
             <Favourite bidItems={bidItems} handleRemove={handleRemove} ></Favourite>

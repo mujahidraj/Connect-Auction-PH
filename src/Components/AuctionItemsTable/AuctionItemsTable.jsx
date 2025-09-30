@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { ImHammer2 } from "react-icons/im";
 
 
-const AuctionItemsTable = ({items,handleBid}) => {
+const AuctionItemsTable = ({items,handleBid,handleEnable}) => {
     return (
         <div>
             <div className="overflow-x-auto">
@@ -19,11 +19,11 @@ const AuctionItemsTable = ({items,handleBid}) => {
     <tbody>
       {items.map((item, index) => (
             <tr key={index} className="border-b border-gray-200 hover:bg-gray-50">
-                <td><img src={item.image} className='w-16 h-16 ' alt="" /></td>
+                <Suspense fallback={<h2>Pictures are loading..</h2>}><td><img src={item.image} className='w-16 h-16 ' alt="" /></td></Suspense>
               <td className="py-3 px-4">{item.title}</td>
               <td className="py-3 px-4">{item.currentBidPrice} USD</td>
               <td className="py-3 px-4">{item.timeLeft} left</td>
-              <td className="py-3 px-4"><ImHammer2 size={25} onClick={()=>handleBid(item)}/>
+              <td className="py-3 px-4"><button disabled={handleEnable(item.id)} onClick={()=>handleBid(item)}><ImHammer2 size={25} className={`${handleEnable(item.id)?"-rotate-45":""}`}/></button>
 </td>
             </tr>
           ))}

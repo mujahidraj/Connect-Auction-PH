@@ -1,8 +1,9 @@
-import React from 'react';
 import { ImHammer2 } from "react-icons/im";
 
 
-const AuctionItems = ({ auctionItems ,handleBid}) => {
+const AuctionItems = ({ auctionItems ,handleBid ,handleEnable}) => {
+
+
     return (
         <div className=''>
             <div className="card bg-base-100 w-96 border-[1px] shadow-sm " >
@@ -23,9 +24,11 @@ const AuctionItems = ({ auctionItems ,handleBid}) => {
 
                     <div className="card-actions justify-between">
                         <h3 className='text-lg'>Bid : <span className='text-red-500'>{auctionItems.currentBidPrice}</span> USD</h3>
-                        <button className="btn btn-primary text-xl"  onClick={()=>{
+                        <button className="btn btn-primary text-xl" disabled={handleEnable(auctionItems.id)} onClick={()=>{
                     
                         handleBid(auctionItems);
+                    
+
                         }
                         }>
                             Bid Now <ImHammer2 size={25}/>
