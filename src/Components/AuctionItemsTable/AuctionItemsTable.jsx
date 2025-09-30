@@ -1,5 +1,6 @@
 import React, { Suspense } from 'react';
 import { ImHammer2 } from "react-icons/im";
+import { toast } from 'react-toastify';
 
 
 const AuctionItemsTable = ({items,handleBid,handleEnable}) => {
@@ -23,7 +24,9 @@ const AuctionItemsTable = ({items,handleBid,handleEnable}) => {
               <td className="py-3 px-4">{item.title}</td>
               <td className="py-3 px-4">{item.currentBidPrice} USD</td>
               <td className="py-3 px-4">{item.timeLeft} left</td>
-              <td className="py-3 px-4"><button disabled={handleEnable(item.id)} onClick={()=>handleBid(item)}><ImHammer2 size={25} className={`${handleEnable(item.id)?"-rotate-45":""}`}/></button>
+              <td className="py-3 px-4"><button disabled={handleEnable(item.id)} onClick={()=>{handleBid(item)
+                toast.success(`${item.title} has been added to favourite list.`)}
+              }><ImHammer2 size={25} className={`${handleEnable(item.id)?"-rotate-45":""}`}/></button>
 </td>
             </tr>
           ))}

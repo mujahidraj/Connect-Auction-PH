@@ -6,9 +6,9 @@ const Footer = () => {
 
 
 
-        <footer className="footer sm:footer-horizontal  text-base-content p-8">
-            <div className='text-center flex flex-col items-center'>
-                <h2 className='flex text-5xl text-blue-600 font-semibold'>Connect <span className='text-amber-400'> Auction</span></h2>
+        <footer className="footer sm:footer-horizontal footer-vertical  text-base-content p-4 sm:p-8">
+            <div className='text-center flex flex-col mx-auto sm:items-center'>
+                <h2 className='flex sm:text-5xl text-2xl text-blue-600 font-semibold'>Connect <span className='text-amber-400'> Auction</span></h2>
 
                 <div className='flex justify-center gap-5 my-5 text-center text-xl'>
                     <p className='text-blue-600'>Bid.</p>
@@ -16,21 +16,27 @@ const Footer = () => {
                     <p className='text-green-600'>Own.</p>
                 </div>
             </div>
-            <nav>
+           <div className='grid grid-cols-2 mx-auto  gap-15'>
+             <nav>
                 <h6 className="footer-title">Services</h6>
-                <a className="link link-hover">Branding</a>
+                <div className='flex flex-col'>
+                    <a className="link link-hover">Branding</a>
                 <a className="link link-hover">Design</a>
                 <a className="link link-hover">Marketing</a>
                 <a className="link link-hover">Advertisement</a>
+                </div>
             </nav>
             <nav>
                 <h6 className="footer-title">Company</h6>
-                <a className="link link-hover">About us</a>
+                <div className='flex flex-col'>
+                    <a className="link link-hover">About us</a>
                 <a className="link link-hover">Contact</a>
                 <a className="link link-hover">Jobs</a>
                 <a className="link link-hover">Press kit</a>
+                </div>
             </nav>
-            <nav>
+           </div>
+            <nav className='mx-auto'>
                 <h6 className="footer-title">Social</h6>
                 <div className="grid grid-flow-col gap-4">
                     <a>

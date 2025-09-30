@@ -1,20 +1,21 @@
 import React from 'react';
 import { CiHeart } from "react-icons/ci";
 import { IoMdClose } from "react-icons/io";
+import { toast } from 'react-toastify';
 
 
 
-const Favourite = ({ bidItems,handleRemove }) => {
+const Favourite = ({ bidItems, handleRemove }) => {
 
-    
-    const totalCost=()=>{
-        let sum=0
 
-    for(const bidItem of bidItems){
-        sum+=bidItem.currentBidPrice;
-        
-    }
-    return sum
+    const totalCost = () => {
+        let sum = 0
+
+        for (const bidItem of bidItems) {
+            sum += bidItem.currentBidPrice;
+
+        }
+        return sum
     }
 
 
@@ -46,8 +47,11 @@ const Favourite = ({ bidItems,handleRemove }) => {
                                         </div>
 
                                     </div>
-                                    <IoMdClose size={35} onClick={()=>handleRemove(
-                                    item.id)}/>
+                                    <IoMdClose size={35} onClick={() => {
+                                        handleRemove(
+                                            item.id)
+                                        toast.warning(`${item.title} has been removed from favourite.`)
+                                    }} />
                                 </div>
                             )}
                         </div>
